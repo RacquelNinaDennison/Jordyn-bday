@@ -1,7 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Kalam:wght@400;700&display=swap');
 :root{font-family:'DM Sans',sans-serif;color:#453e36;background:#f8f3eb;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button{-webkit-tap-highlight-color:transparent;font:inherit;cursor:pointer;touch-action:manipulation}button:focus-visible{outline:3px solid #ac6341;outline-offset:5px}h1,h2,p{margin-top:0}::selection{background:#efb9c3}.eyebrow{font-size:11px;font-weight:600;letter-spacing:2.6px;line-height:1.8;margin-bottom:16px}
 .card-page{--ink:#4b4931;--button:#fff5db;background:#dedacb;color:var(--ink)}.world{position:relative;isolation:isolate;max-width:540px;min-height:760px;height:100svh;margin:auto;overflow:hidden;background:#eed5b9}.world-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3;animation:scene-drift 18s ease-in-out infinite alternate;transform-origin:50% 70%}.sky-wash{position:absolute;inset:0;z-index:-2;background:linear-gradient(#ffe9d778,#ffeed326 40%,transparent 57%,#1f39281a 80%,#203726a6)}.card-heading{text-align:center;padding:20px 22px 0;position:relative;z-index:1;animation:arrive 1s ease-out both}.card-heading .eyebrow{font-size:10px;letter-spacing:2.5px}.card-heading h1{font:clamp(38px,9vw,51px)/1.05 'DM Serif Display',Georgia,serif;font-weight:400;letter-spacing:-1.4px;margin-bottom:15px}.handwritten{font:22px 'Kalam',cursive}.age-stamp{display:inline-flex;align-items:center;gap:9px;font:30px 'DM Serif Display',Georgia,serif;padding:8px 14px;border:1px solid #69634d55;border-radius:50%;transform:rotate(-7deg);margin-top:1px}.age-stamp small{font:10px/1.4 'DM Sans',sans-serif;max-width:47px;text-align:left;letter-spacing:.5px}.card-bottom{position:absolute;bottom:max(26px,env(safe-area-inset-bottom));left:24px;right:24px;text-align:center;z-index:2;animation:arrive 1s .2s both}.card-bottom>p{font:18px 'Kalam',cursive;color:#fff6df;margin-bottom:13px;text-shadow:0 1px 7px #20332180}.primary{border:0;border-radius:40px;min-height:54px;padding:16px 25px;background:var(--button);color:var(--ink);font-weight:600;font-size:14px;box-shadow:0 6px 0 #212d1d12,0 7px 22px #232c1d12;transition:transform .2s,box-shadow .2s;max-width:100%}.primary:hover{transform:translateY(-3px);box-shadow:0 8px 0 #212d1d12,0 12px 22px #232c1d19}.primary:active{transform:translateY(1px)}.card-bottom .primary{width:100%;display:flex;justify-content:center;gap:30px;align-items:center}.primary span{font-size:22px;line-height:16px}.tiny-note{display:block;font-size:10px;letter-spacing:.35px;margin-top:17px;color:#fff6df}.specks{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}.speck{position:absolute;width:4px;height:4px;background:#fff5b0;border-radius:100%;box-shadow:0 0 12px 3px #fff3ad90;animation:floaty var(--speed,6s) ease-in-out infinite alternate;opacity:.7;animation-delay:var(--delay)}dialog{position:fixed;width:calc(100% - 40px);max-width:430px;max-height:85svh;padding:45px 28px 28px;border:none;box-shadow:0 25px 100px #10271d50;text-align:center;color:var(--ink);overflow:auto}dialog::backdrop{background:#28352366;backdrop-filter:blur(6px)}dialog[open]{animation:letter-open .5s cubic-bezier(.2,.8,.3,1) both}.close-dialog{position:absolute;right:12px;top:8px;width:44px;height:44px;border:none;background:none;font-size:28px;color:inherit}.letter-dialog{background:#fff9e9;border-radius:5px;transform:rotate(-1deg);background-image:repeating-linear-gradient(transparent,transparent 31px,#826c3920 32px)}.letter-dialog .eyebrow{font-size:10px;letter-spacing:1.8px}.letter-symbol{font-size:36px;color:#b37b59}.letter-page h2{font:34px/1.12 'DM Serif Display',Georgia,serif;margin:17px 0}.letter-page p{font:19px/1.8 'Kalam',cursive;margin:0 0 24px}.letter-dialog .primary{background:#486249;color:#fff6dc;width:100%}.page-dots{display:flex;justify-content:center;gap:7px;margin-top:20px}.page-dots i{width:5px;height:5px;border-radius:50%;background:#d6d5bc}.page-dots i.active{background:#52654a}.particles{position:fixed;inset:0;pointer-events:none;z-index:30;overflow:hidden}.particle{position:absolute;top:-30px;font-size:23px;animation:confetti var(--duration) ease-out forwards}@keyframes arrive{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes scene-drift{from{transform:scale(1)}to{transform:scale(1.045) translateY(-3px)}}@keyframes floaty{0%{transform:translate(0,0);opacity:.15}50%{opacity:1}100%{transform:translate(14px,-40px);opacity:.3}}@keyframes badge-wiggle{0%,100%{transform:rotate(10deg)}50%{transform:rotate(-7deg)}}@keyframes twinkle{0%,100%{opacity:.55;scale:.88}50%{opacity:1;scale:1.1}}@keyframes letter-open{from{opacity:0;translate:0 35px;scale:.93}to{opacity:1;translate:0 0;scale:1}}@keyframes confetti{to{transform:translate(var(--drift),105vh) rotate(var(--spin));opacity:0}}
-.card-top{height:80px;padding:30px 27px;display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:2px;color:#645d42}.card-top span{font-size:23px}
-@media(min-width:600px){.card-page{padding:24px 0}.world{border-radius:22px;height:calc(100svh - 48px);min-height:760px;box-shadow:0 20px 80px #0002}.card-heading h1{font-size:51px}}
-@media(max-width:360px){.card-heading{padding-top:13px}.card-heading h1{font-size:37px}.primary{font-size:13px;padding:15px}.world{min-height:700px}.card-bottom{left:20px;right:20px}.card-heading .eyebrow{letter-spacing:1.8px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.particle{display:none}.world-art{transform:none}}
+
+/* Mobile first: content stays in the page flow, so short screens and larger text
+   can scroll naturally without covering the birthday message or button. */
+html { min-width: 280px; }
+.world {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto minmax(160px, 1fr) auto;
+}
+.card-top {
+  grid-row: 1;
+  min-height: 64px;
+  padding: max(20px, env(safe-area-inset-top)) max(24px, env(safe-area-inset-right)) 16px max(24px, env(safe-area-inset-left));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: .625rem;
+  letter-spacing: 2px;
+  color: #645d42;
+}
+.card-top span { font-size: 1.5rem; }
+.card-heading { grid-row: 2; padding: clamp(8px, 2svh, 22px) 22px 0; }
+.card-heading h1 { font-size: clamp(2.25rem, 9vw, 3.2rem); }
+.handwritten { font-size: clamp(1.125rem, 5vw, 1.5rem); margin-bottom: 16px; }
+.age-stamp { font-size: 1.875rem; }
+.age-stamp small { font-size: .625rem; }
+.card-bottom {
+  grid-row: 4;
+  position: relative;
+  inset: auto;
+  width: 100%;
+  padding: 26px max(24px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(24px, env(safe-area-inset-left));
+}
+.card-bottom > p { font-size: 1.125rem; line-height: 1.5; }
+.card-bottom .primary { max-width: 390px; margin-inline: auto; gap: 20px; }
+.primary { font-size: .9375rem; line-height: 1.45; min-height: 54px; }
+.primary span { flex-shrink: 0; }
+.tiny-note { font-size: .6875rem; line-height: 1.5; }
+dialog {
+  width: min(480px, calc(100% - 32px));
+  max-width: none;
+  max-height: calc(100svh - 48px);
+  padding: 48px clamp(20px, 5vw, 36px) 26px;
+  overscroll-behavior: contain;
+}
+.letter-page h2 { font-size: clamp(1.75rem, 6vw, 2.25rem); }
+.letter-page p { font-size: 1.1875rem; line-height: 1.7; }
+body:has(dialog[open]) { overflow: hidden; }
+
+/* Portrait tablets retain the illustrated card with room around its edges. */
+@media (min-width: 600px) {
+  .card-page { padding: 24px; }
+  .world {
+    max-width: 620px;
+    min-height: calc(100svh - 48px);
+    border-radius: 24px;
+    box-shadow: 0 20px 80px #0002;
+    margin-inline: auto;
+  }
+  .card-heading h1 { font-size: 3.4rem; }
+  .card-bottom { padding-inline: 40px; }
+}
+
+/* Wide screens become an open storybook: letter invitation beside the meadow.
+   The portrait illustration keeps its ducks visible instead of being stretched. */
+@media (min-width: 900px), (min-width: 700px) and (orientation: landscape) {
+  .card-page { padding: clamp(20px, 3vw, 48px); }
+  .world {
+    max-width: 1280px;
+    min-height: calc(100svh - clamp(40px, 6vw, 96px));
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    grid-template-rows: auto 1fr auto;
+    background: #faead2;
+  }
+  .world-art {
+    left: auto;
+    width: 51.22%;
+    object-position: center 72%;
+    animation: none;
+  }
+  .sky-wash {
+    background: linear-gradient(90deg, #faead2 47%, #faead2e6 49%, #faead200 59%);
+  }
+  .card-top { grid-column: 1; padding: 30px clamp(24px, 4vw, 56px); }
+  .card-heading { grid-column: 1; grid-row: 2; align-self: center; padding: 36px 24px; }
+  .card-heading h1 { font-size: clamp(2.7rem, 4.3vw, 4.3rem); }
+  .card-heading .eyebrow { font-size: .6875rem; }
+  .handwritten { font-size: clamp(1.3rem, 2vw, 1.625rem); }
+  .age-stamp { margin-top: 10px; }
+  .card-bottom { grid-column: 1; grid-row: 3; padding: 24px clamp(24px, 4vw, 56px) 36px; }
+  .card-bottom > p { color: #645d42; text-shadow: none; }
+  .card-bottom .primary { background: #486249; color: #fff6dc; }
+  .tiny-note { color: #645d42; }
+  .specks { left: 48%; }
+  dialog { width: min(520px, calc(100% - 48px)); padding: 50px 42px 30px; }
+}
+
+@media (max-width: 599px) and (max-height: 740px) {
+  .card-top { min-height: 50px; padding-block: max(12px, env(safe-area-inset-top)) 8px; }
+  .card-heading { padding-top: 4px; }
+  .card-heading h1 { font-size: clamp(2rem, 8.5vw, 2.5rem); margin-bottom: 10px; }
+  .card-heading .eyebrow { margin-bottom: 10px; letter-spacing: 1.8px; }
+  .handwritten { margin-bottom: 10px; }
+  .age-stamp { font-size: 1.5rem; padding: 5px 12px; }
+  .card-bottom { padding-top: 16px; padding-bottom: max(16px, env(safe-area-inset-bottom)); }
+  .card-bottom > p { margin-bottom: 10px; font-size: 1rem; }
+  .tiny-note { margin-top: 12px; }
+}
+@media (max-height: 500px) {
+  .card-page { padding: 12px; }
+  .world { min-height: calc(100svh - 24px); }
+  .card-top { padding: 12px 24px; min-height: 44px; }
+  .card-heading { padding: 10px 18px; }
+  .card-heading h1 { font-size: 2.25rem; margin-bottom: 8px; }
+  .card-heading .eyebrow { margin-bottom: 8px; }
+  .handwritten { font-size: 1.125rem; margin-bottom: 8px; }
+  .age-stamp { margin-top: 0; font-size: 1.5rem; padding: 4px 10px; }
+  .card-bottom { padding: 12px 24px 18px; }
+  .card-bottom > p { margin-bottom: 8px; font-size: 1rem; }
+  .tiny-note { margin-top: 10px; }
+  .letter-dialog { transform: none; }
+  dialog { max-height: calc(100svh - 24px); padding-block: 45px 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .particle { display: none; }
+  .world-art { transform: none; }
+}

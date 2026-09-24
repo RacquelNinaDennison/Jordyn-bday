@@ -1,6 +1,6 @@
 # Happy 24th birthday, Jordyn ♡
 
-The finished duck birthday card is in this folder. It has drifting fireflies, a three-page birthday letter, and a confetti finale. There is no audio or sound control. Animations respect the device’s reduced-motion setting.
+The finished duck birthday card is in this folder. It has drifting fireflies, a three-page birthday letter, and a confetti finale. The layout adapts from a full-screen illustrated card on phones to an open storybook on wide screens. Short screens and long letters scroll naturally. There is no audio or sound control. Animations respect the device’s reduced-motion setting.
 
 ## Files to upload to GitHub
 

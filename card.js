@@ -6,16 +6,16 @@ const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 // Edit these three pages to personalise Jordyn’s birthday letter.
 const pages = [
   {
-    title: 'Dear Jordyn,',
-    message: 'Some people make the world feel a little softer, a little brighter, and a lot more like home. You’re one of those people.'
+    title: 'My dear Jordyn,',
+    message: 'Happy birthday my angel, thank you for coming into my life and showing me how beautiful friendship can be. '
   },
   {
-    title: 'Here’s to your 24th chapter.',
-    message: 'To the belly laughs, the tiny adventures, the “you had to be there” moments. And to all the good things we haven’t even met yet.'
+    title: 'You are so amazing.',
+    message: 'I hope today is everything and more. I hope you know that you are the absolute bomb and you will always have a special place in my heart.'
   },
   {
-    title: 'You’ve got this. And you’ve got me.',
-    message: 'You don’t have to have it all figured out at 24. Just keep being wonderfully you. I’m so happy I get to be in your corner. Happy birthday, Jordyn. ♡'
+    title: '24 is old- jokes',
+    message: 'I love you lots! Keep being so amazing. Happy birthday, my labooboo. ♡'
   }
 ];
 
@@ -26,10 +26,10 @@ let currentPage = 0;
 function showPage() {
   $('#letter-title').textContent = pages[currentPage].title;
   $('#letter-copy').textContent = pages[currentPage].message;
-  $('#letter-count').textContent = `A NOTE FOR YOU · ${currentPage + 1} OF ${pages.length}`;
+  $('#letter-count').textContent = `A love letter to my love`;
   nextButton.textContent = currentPage === pages.length - 1
-    ? 'Here’s to you, birthday girl ✨'
-    : 'There’s more →';
+    ? 'LOVE YOU!!!!'
+    : 'Next';
   document.querySelectorAll('.page-dots i').forEach((dot, index) => {
     dot.classList.toggle('active', index === currentPage);
   });
@@ -86,8 +86,8 @@ nextButton.addEventListener('click', () => {
   } else {
     letter.close();
     celebrate();
-    $('.card-bottom > p').textContent = 'Happy 24th, Jordyn. So loved. Always.';
-    $('#main-action').innerHTML = 'Read your letter again <span>♡</span>';
+    $('.card-bottom > p').textContent = 'Happy 24th, Old lady.';
+    $('#main-action').innerHTML = 'Read again <span>♡</span>';
   }
 });
 
